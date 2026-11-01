@@ -1,0 +1,23 @@
+{
+  "name": "genpark-personal-agent-focus-recovery-binaural-beats-skill",
+  "version": "1.0.0",
+  "description": "Calculates Auditory Steady-State Response (ASSR) binaural beat frequencies (40Hz Gamma, 10Hz Alpha, 6Hz Theta) and schedules phased cognitive entrainment protocols.",
+  "tools": [
+    {
+      "name": "calculate_binaural_entrainment_parameters",
+      "description": "Calculates left/right ear stereo frequencies and ASSR parameters for brainwave entrainment.",
+      "parameters": {
+        "target_cognitive_state": "string (optional, default 'deep_focus')",
+        "carrier_base_hz": "float (optional, default 216.0)"
+      }
+    },
+    {
+      "name": "schedule_auditory_entrainment_protocol",
+      "description": "Generates a phased 3-stage binaural entrainment sequence tailored to work session length.",
+      "parameters": {
+        "work_block_duration_minutes": "float (optional, default 90.0)",
+        "fatigue_level": "string (optional, default 'moderate')"
+      }
+    }
+  ]
+}
